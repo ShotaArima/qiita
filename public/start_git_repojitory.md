@@ -26,8 +26,23 @@ ignorePublish: false
   - リポジトリの初期化を行う
     `git init`
   - README.mdファイルを作成する
-    `echo "# (リポジトリ名)"`
-  `git clone https://github.com/(自分のGitHubのアカウント名)/(リポジトリ名).git`
-  `git config --global --add safe.directory '(ローカルリポジトリのアドレス)`
+    `echo "# (リポジトリ名)" >> README.md`
+  - READMEをaddする
+    `git add README.md`
+  - READMEをcommitする
+    `git commit -m "upload README.md"`
+  - mainブランチに切り替える
+    `git branch -M main`
+  - リモート接続する
+    `git remote add origin https://github.com/(アカウント名)/(リポジトリ名)`
+  - pushする
+    `git push -u origin main`
 
+## 最初のpushが完了した後、コミットする場合
+  - addする
+    `git add (ファイル名)`
+  - commitする
+    `git commit -m "(コミットメッセージ)"`
+  - pushする
+    `git push`
 
