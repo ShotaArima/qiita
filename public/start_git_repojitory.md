@@ -1,11 +1,11 @@
 ---
 title: GitHubでリポジトリを始める方法
 tags:
-  - 'Git'
-  - '初心者'
+  - Git
+  - 初心者
 private: false
-updated_at: ''
-id: null
+updated_at: '2023-12-02T14:39:08+09:00'
+id: c09f67d192e19762c2fa
 organization_url_name: null
 slide: false
 ignorePublish: false
