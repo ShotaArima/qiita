@@ -8,7 +8,7 @@ updated_at: '2024-03-20T12:40:31+09:00'
 id: a1476955c6f5fe52042f
 organization_url_name: null
 slide: false
-ignorePublish: false
+ignorePublish: true
 ---
 
 みなさん、こんにちは！
