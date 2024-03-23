@@ -1,5 +1,5 @@
 ---
-title: geeksai2024spring
+title: 技育祭2024の感想
 tags:
   - ''
 private: false
