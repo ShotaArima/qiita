@@ -1,23 +1,25 @@
 ---
 title: 技育祭2024の感想
 tags:
-  - '技育祭'
+  - 技育祭
 private: false
-updated_at: ''
-id: null
+updated_at: '2024-03-24T15:55:36+09:00'
+id: c1c0d050705c3228e9c1
 organization_url_name: null
 slide: false
-ignorePublish: ture
+ignorePublish: false
 ---
 # 技育祭2024春
 ## 1. はじめに
 2024/3/16~17の2日間にわたって開催された技育祭について、感想と今後の進路に向けて投稿しようと思います。
 
+技育祭を知らない人、
+
 自己紹介です。
 
 https://Twitter.com/live_in_2107
 
-Xでは、「学生室の住人」として、日々学生室と呼ばれる研究室メンバーのための部屋に入り浸り、
+Xでは、「学生室の住人」として、日々学生室と呼ばれる研究室メンバーのための部屋に入り浸っています。
 
 
 
