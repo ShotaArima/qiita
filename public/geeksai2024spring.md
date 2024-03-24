@@ -7,7 +7,7 @@ updated_at: '2024-03-24T15:55:36+09:00'
 id: c1c0d050705c3228e9c1
 organization_url_name: null
 slide: false
-ignorePublish: ture
+ignorePublish: false
 ---
 # 技育祭2024春
 ## 1. はじめに
