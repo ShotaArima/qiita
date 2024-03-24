@@ -3,7 +3,7 @@ title: 技育祭2024の感想
 tags:
   - 技育祭
 private: false
-updated_at: '2024-03-25T08:20:54+09:00'
+updated_at: '2024-03-25T08:24:25+09:00'
 id: f5b8ac211665a3a60294
 organization_url_name: null
 slide: false
