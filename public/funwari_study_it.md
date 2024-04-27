@@ -162,6 +162,7 @@ https://speakerdeck.com/takumin1234/laravelnosabisukontenawozhi-rou
     $myClass->run();
   ```
   *発表資料より[^4]*
+  
   上記のようなクラスの場合、emailについてGmailを使用するとMyClassを修正する必要があり、柔軟性に欠ける
   これを依存関係を切り離すことで、より柔軟で、単体テストがやりやすくなるとのこと
 
