@@ -55,7 +55,7 @@ https://speakerdeck.com/javadog/hunwarilt
   - サーバの乗り換え
     オンプレサーバでもdocker-composeによるコンテナ運用にしておく
 
-### 感想
+**感想**
   - オンプレサーバとのAWSとの併用について初心者でも理解しやすかった
   - 自分自身で開発したシステムでは、S3上にSQLiteのDBファイルを作成し、運用しているので、別のアプローチを知るいい機会になった
   ※SQLiteをS3上で運用した話についての記事は近日公開予定です。
@@ -67,7 +67,7 @@ https://speakerdeck.com/mi111025/0425
   RGB色空間での表現のためコードが煩雑に...
   HSL色空間で表現することで色相を変化させることで簡単に表現できるように！
 
-### 感想
+**感想**
   - コードに詳しい人が友人にいてお互いにレビューできるいい関係性が素晴らしい
   - 自分のコードを作りっぱなしにしていないことがすごい！
   - 周りにいる詳しい人にどんどん質問していこうと思った
@@ -97,7 +97,7 @@ https://speakerdeck.com/riofujimon/lets-learn-code-review
   > - ソフトウェア設計は、原則の基づいて評価されるべき
 
 
-### 感想
+**感想**
   - レビューの原則は、改めて全プログラマの共通認識として理解しないといけない内容だとわかった
   - ソースコード以外の全てのレビューにも同じことが言えそうな内容だった
 
@@ -111,7 +111,7 @@ https://speakerdeck.com/riku_kuramoto/resultxing-noci-noerahandoringu
 
   **Railway Oriented**で、TS開発でより型安全なエラーハンドリングを実現する
 
-### 感想
+**感想**
   - ネストが深くなり、どこでエラー処理を行なっているのか見失いやすいから、この処理はいずれか導入していきたいと思った
   - 導入するまでカロリーがいるとのことだったので、体力をつけようと思った
   - 懇親会でお話した際に、これから社内に浸透させていくということを伺い、熱量溢れている姿がかっこいいと思った
@@ -132,7 +132,7 @@ https://speakerdeck.com/yamatai1212/ji-shi-no-bu-mu-haye-wu-nei-rong-kara
   上記の内容で記事を書くと、自分が同じ部分で困ったことや他の人が困った時に役立つ記事になるとのこと
   社内で記事を共有すると強い領域の人からフィードバックがもらえることも！
 
-### 感想
+**感想**
   - まず投稿頻度がレベチ
   - 自分はイベントごとの内容しか書いていないので、日頃のことを書こうと思った
   - 執筆活動は自分だけでなく、相手が助かることにもつながる！
@@ -166,7 +166,7 @@ https://speakerdeck.com/takumin1234/laravelnosabisukontenawozhi-rou
   これを依存関係を切り離すことで、より柔軟で、単体テストがやりやすくなるとのこと
 
 
-### 感想
+**感想**
   - クラスの柔軟性について考えてこなかったので、今回を機にクラス設計について詳しく考えていこうと思った
   - 紹介されていた書籍[^5]を買ってみようと思った
 
@@ -176,7 +176,7 @@ https://speakerdeck.com/takumin1234/laravelnosabisukontenawozhi-rou
 https://speakerdeck.com/
 
 
-### 感想
+**感想**
 
 
 
@@ -185,7 +185,7 @@ https://speakerdeck.com/
 https://speakerdeck.com/
 
 
-### 感想
+**感想**
 
 
 ## 9.
@@ -193,7 +193,7 @@ https://speakerdeck.com/
 https://speakerdeck.com/
 
 
-### 感想
+**感想**
 
 
 ## 10. 
@@ -201,14 +201,14 @@ https://speakerdeck.com/
 https://speakerdeck.com/
 
 
-### 感想
+**感想**
 
 
 ## 11. 
 発表者:さん X:[@](https://x.com/)
 https://speakerdeck.com/
 
-### 感想
+**感想**
 
 
 ## 12.
@@ -216,7 +216,7 @@ https://speakerdeck.com/
 https://speakerdeck.com/
 
 
-### 感想
+**感想**
 
 
 ## 懇親会＆まとめ
