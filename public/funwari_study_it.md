@@ -7,7 +7,7 @@ tags:
   - '新卒3年目'
   - '大学生'
 
-private: ture
+private: true
 updated_at: ''
 id: null
 organization_url_name: null
