@@ -7,12 +7,12 @@ tags:
   - '新卒3年目'
   - '大学生'
 
-private: false
+private: ture
 updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: ture
+ignorePublish: false
 ---
 
 先日、春和の候！ 若手エンジニアふんわりLT　Night！に参加したので、記録として残すため、ブログ書きました。何か間違いがありましたらお気軽にご指摘ください。
