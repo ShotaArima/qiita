@@ -26,6 +26,7 @@ ignorePublish: true
 ## 構成図
 
 <!-- ここにDraw.ioで作成された構成図を添付 -->
+![構成図](https://github.com/ShotaArima/qiita/assets/130956497/5187debc-3daf-420b-a80e-f8261cf69fc2)
 
 
 ## シークエンス図
