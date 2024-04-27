@@ -1,15 +1,14 @@
 ---
 title: 初めての勉強会 若手エンジニアふんわりLT Night！感想戦
 tags:
-  - 'funwari_study_it'
-  - '新卒1年目'
-  - '新卒2年目'
-  - '新卒3年目'
-  - '大学生'
-
-private: true
-updated_at: ''
-id: null
+  - 大学生
+  - 新卒１年目
+  - funwari_study_it
+  - 新卒2年目
+  - 新卒3年目
+private: false
+updated_at: '2024-04-27T23:53:39+09:00'
+id: bfd2c1a055a5468fc0ae
 organization_url_name: null
 slide: false
 ignorePublish: false
@@ -36,7 +35,8 @@ https://wakate-funwari-study.connpass.com/event/308966/
 
 ## 1. 個人開発でAWSを使いたい
 発表者:javadogさん X:[@javadog_](https://x.com/Javadog_)
-https://speakerdeck.com/javadog/hunwarilt
+<!-- https://speakerdeck.com/javadog/hunwarilt -->
+<script defer class="speakerdeck-embed" data-id="050d7d1dc25c455889c4718d1c75902f" data-ratio="1.7772511848341233" src="//speakerdeck.com/assets/embed.js"></script>
   最初から全てAWSを使用してのアプリケーション開発することは金銭的に高くなりやすい...
   スケールに合わせて激安サーバとAWSを拡使い分けていこう
   | 選択肢 | サービス | 月額料金 |
@@ -62,7 +62,9 @@ https://speakerdeck.com/javadog/hunwarilt
 
 ## 2. 友達にコード送ったら１行にされた
 発表者:mi111025さん X:[@mi111025](https://x.com/mi111025)
-https://speakerdeck.com/mi111025/0425
+<!-- https://speakerdeck.com/mi111025/0425
+ -->
+ <script defer class="speakerdeck-embed" data-id="162505ec6e7445fd8e2fd3b8a9ff9f53" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
   ポートフォリオサイトで色を表現するスライダーを作成
   RGB色空間での表現のためコードが煩雑に...
   HSL色空間で表現することで色相を変化させることで簡単に表現できるように！
@@ -74,8 +76,8 @@ https://speakerdeck.com/mi111025/0425
 
 ## 3. Let's learn code review
 発表者:RioFujimonさん X:[@RioFujimon](https://x.com/RioFujimon)
-https://speakerdeck.com/riofujimon/lets-learn-code-review
-
+<!-- https://speakerdeck.com/riofujimon/lets-learn-code-review -->
+<script defer class="speakerdeck-embed" data-id="1b0931da491242599cd4b74abd00b65a" data-ratio="1.7772511848341233" src="//speakerdeck.com/assets/embed.js"></script>
   コードレビューの課題点
   - 他人の書いたコードレベルが高くて、理解が難しい
   - どのような観点でレビューすればいいのかわからない
@@ -103,7 +105,8 @@ https://speakerdeck.com/riofujimon/lets-learn-code-review
 
 ## 4. Result型の次のエラーハンドリング
 発表者:aka sousanさん X:[@moso_midnight](https://x.com/moso_midnight)
-https://speakerdeck.com/riku_kuramoto/resultxing-noci-noerahandoringu
+<!-- https://speakerdeck.com/riku_kuramoto/resultxing-noci-noerahandoringu -->
+<script defer class="speakerdeck-embed" data-id="33451aef05394aa3abffa76673b4ba2c" data-ratio="1.410031847133758" src="//speakerdeck.com/assets/embed.js"></script>
 
   jsでのtry-catchのエラーハンドリングについて以下のような問題がある
   - 処理が増えたら`if -else`が増える
@@ -119,7 +122,8 @@ https://speakerdeck.com/riku_kuramoto/resultxing-noci-noerahandoringu
 
 ## 5. 記事の一歩目は業務内容から
 発表者:yamatai12さん X:[@taiyama1212](https://x.com/taiyama1212)
-https://speakerdeck.com/yamatai1212/ji-shi-no-bu-mu-haye-wu-nei-rong-kara
+<!-- https://speakerdeck.com/yamatai1212/ji-shi-no-bu-mu-haye-wu-nei-rong-kara -->
+<script defer class="speakerdeck-embed" data-id="565c528b147043ad856f9ab5e97e1f2e" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
 
   1年で100本の記事投稿をしているとのこと
   何書けばいいかわからない人むけの発表でした
@@ -139,8 +143,8 @@ https://speakerdeck.com/yamatai1212/ji-shi-no-bu-mu-haye-wu-nei-rong-kara
   
 ## 6. Laravelのサービスコンテナを知ろう
 発表者:たくみんさん X:[@Ota_Rg_Blog](https://x.com/Ota_Rg_Blog)
-https://speakerdeck.com/takumin1234/laravelnosabisukontenawozhi-rou
-
+<!-- https://speakerdeck.com/takumin1234/laravelnosabisukontenawozhi-rou -->
+<script defer class="speakerdeck-embed" data-id="4d8252cf2ebe4544b704b9f71afb47de" data-ratio="1.7772511848341233" src="//speakerdeck.com/assets/embed.js"></script>
   >DI(Depending Injection):依存性注入
   > 他のオブジェクトを使用する時に、自身の中ではく外から設定することで、よりスムーズなソース管理や処理の流れを再現するデザインパターンのこと
 
@@ -174,8 +178,9 @@ https://speakerdeck.com/takumin1234/laravelnosabisukontenawozhi-rou
 
 ## 7. Bloom FilterをJSで実装してみた
 発表者:kii310さん X:[@kii310_nyan](https://x.com/kii310_nyan)
-https://speakerdeck.com/kii310/bloom-filterwojavascriptdeshi-zhuang-sitemita
+<!-- https://speakerdeck.com/kii310/bloom-filterwojavascriptdeshi-zhuang-sitemita -->
 
+<script defer class="speakerdeck-embed" data-id="cbddc451063d4994af695a0d472f14d9" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
   >Bloom Filterとは
   空間効率の良い確率的データ構造であり、あるデータが集合の要素である(集合に含まれている)かどうかの判定に使われる
   
@@ -191,7 +196,7 @@ https://speakerdeck.com/kii310/bloom-filterwojavascriptdeshi-zhuang-sitemita
 
 ## 8. 正しいプロファイリング
 発表者:さん
-https://connpass.com/user/Saito_3110/
+<!-- https://connpass.com/user/Saito_3110/ -->
 
   「推測するな、計測せよ」
   この言葉にあるように実際に観測された事実に則って話をしようとするお話。
