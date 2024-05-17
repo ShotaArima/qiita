@@ -30,8 +30,57 @@ ignorePublish: True
 >- ローカルに保存されてるgitや補完機能などをそのまま使用できる
 
 # 3. 構成
+Dokcerfileには、直接書かず、environment.ymlにライブラリの情報を書きます。ライブラリについて
 
 # 4. 実装
+
+## i. VScode、Dockerのインストール
+VScodeとDockerのインストールを行なってください
+### VScode
+- インストール
+
+
+- 拡張機能
+Jupyter
+
+
+### Docker
+お手元のPCのOSに合わせてインストールを行なってください
+**Windows**
+
+
+**MacOS**
+
+
+## ii. Dockerイメージの作成
+- Docekrfile
+
+- condaの場合
+  environment.yml
+
+- 
+  requirment.txt
+
+- Docker compose
+
+
+## iii. パスワードの作成
+ここで一時的にPython環境を用意します。
+Google Colabを使用することをお勧めします。
+```python
+
+```
+Dokcer composeの`CMD`行にハッシュ値を貼り付けていきます。
+
+## iv. コンテナの起動
+```shell
+docker compose build # コンテナのビルド
+docker compose -t up # コンテナの起動
+```
+
+## v. VScodeの設定
+
+## vi. 実行確認
 
 # 5. 終わりに
 このリポジトリが分析の研究を行う際の環境構築で悩む方の助けになればと思い作成しました。また、Pythonを扱う上で、ライブラリ管理について触れてもらう機会になればと思います。自分自身もまだまだ未熟者ですが、今後も記事を執筆できればと思います。よろしくお願いします。
