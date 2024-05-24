@@ -1,14 +1,13 @@
 ---
-# title: jupyter-docker
 title: Dockerでローカルに分析環境を整える方法
 tags:
-  - 'docker'
-  - 'python'
-  - 'jupyter'
-  - 'データ分析'
+  - Python
+  - Docker
+  - データ分析
+  - Jupyter
 private: true
-updated_at: ''
-id: null
+updated_at: '2024-05-24T15:03:05+09:00'
+id: 43fecec65f17e3240324
 organization_url_name: null
 slide: false
 ignorePublish: false
