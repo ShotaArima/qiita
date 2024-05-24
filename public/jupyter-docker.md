@@ -6,12 +6,12 @@ tags:
   - 'python'
   - 'jupyter'
   - 'データ分析'
-private: false
+private: true
 updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: True
+ignorePublish: false
 ---
 # 1. 概要
 このリポジトリは、DockerでJupyter Notebookを起動し、エディタをVScodeで使えるようにしたものです。
