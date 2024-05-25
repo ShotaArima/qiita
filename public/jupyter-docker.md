@@ -45,6 +45,7 @@ VScodeとDockerのインストールを行なってください
 以下の記事を参考にお手持ちのPCにインストールを行ってください。
 https://qiita.com/psychoroid/items/7d85ae6bade4a67aedb1
 
+
 - 拡張機能
 VScodeを開き拡張機能から「Jupyter」を選択し、インストールを行ってください。
 <img width="1470" alt="スクリーンショット 2024-05-22 9 29 14" src="https://github.com/ShotaArima/docker-jupyter/assets/130956497/f5db0733-1490-42e9-a7a4-3956e2199933">
@@ -61,10 +62,12 @@ VScodeを開き拡張機能から「Jupyter」を選択し、インストール�
 
 - dockerのインストール
 https://docs.docker.jp/desktop/install/windows-install.html
+*参考文献[^2]*
 
 **MacOS**
 - dockerのインストール
 https://docs.docker.jp/desktop/install/mac-install.html
+*参考文献[^3]*
 
 #### Dockerの起動の確認
 「Hello-world」と呼ばれるコンテナを起動します。
@@ -241,3 +244,5 @@ print("Hello World!")
 https://twitter.com/live_in_2107/
 
 [^1]:[SVG PORN](https://svgporn.com/)
+[^2]:[Windows に Docker Desktop をインストール](https://docs.docker.jp/desktop/install/windows-install.html)
+[^3]:[Mac に Docker Desktop をインストール](https://docs.docker.jp/desktop/install/mac-install.html)
