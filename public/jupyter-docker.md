@@ -42,9 +42,8 @@ VScodeとDockerのインストールを行なってください
 ### VScode
 - インストール
 以下の記事を参考にお手持ちのPCにインストールを行ってください。
-
 https://qiita.com/psychoroid/items/7d85ae6bade4a67aedb1
-
+*Qiita[^2]*
 
 - 拡張機能
 VScodeを開き拡張機能から「Jupyter」を選択し、インストールを行ってください。
@@ -62,12 +61,12 @@ VScodeを開き拡張機能から「Jupyter」を選択し、インストール�
 
 - dockerのインストール
 https://docs.docker.jp/desktop/install/windows-install.html
-*参考文献[^2]*
+*参考文献[^3]*
 
 **MacOS**
 - dockerのインストール
 https://docs.docker.jp/desktop/install/mac-install.html
-*参考文献[^3]*
+*参考文献[^4]*
 
 #### Dockerの起動の確認
 「Hello-world」と呼ばれるコンテナを起動します。
@@ -244,5 +243,6 @@ print("Hello World!")
 https://twitter.com/live_in_2107/
 
 [^1]:[SVG PORN](https://svgporn.com/)
-[^2]:[Windows に Docker Desktop をインストール](https://docs.docker.jp/desktop/install/windows-install.html)
-[^3]:[Mac に Docker Desktop をインストール](https://docs.docker.jp/desktop/install/mac-install.html)
+[^2]:[Visual Studio Code (Windows版) のインストール](https://qiita.com/psychoroid/items/7d85ae6bade4a67aedb1)
+[^3]:[Windows に Docker Desktop をインストール](https://docs.docker.jp/desktop/install/windows-install.html)
+[^4]:[Mac に Docker Desktop をインストール](https://docs.docker.jp/desktop/install/mac-install.html)
