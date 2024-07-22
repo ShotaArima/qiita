@@ -1,11 +1,11 @@
 ---
 title: 大吉祥寺.pmという感動テックカンファレンス
 tags:
-  - '吉祥寺.pm'
-  - 'カンファレンス'
+  - カンファレンス
+  - 吉祥寺.pm
 private: false
-updated_at: ''
-id: null
+updated_at: '2024-07-23T03:22:42+09:00'
+id: b4fc3c31b8db7db6b0f9
 organization_url_name: null
 slide: false
 ignorePublish: false
