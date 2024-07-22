@@ -2,12 +2,12 @@
 title: 大吉祥寺.pmという感動テックカンファレンス
 tags:
   - ''
-private: true
+private: false
 updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 # 1. はじめに
 今回7/13(土)に吉祥寺にある武蔵野公会堂で[「大吉祥寺.pm」](https://fortee.jp/dai-kichijojipm-2024)に参加してきました。
