@@ -55,7 +55,7 @@ if __name__ == "__main__":
     input_file = sys.argv[1]
     output_file = sys.argv[2]
     
-    convert_encoding('(Shift-JISのファイル)', '(UTF-8のファイル)')
+    convert_encoding('input-Shift-JIS-file', 'output-UTF-8-file')
 ```
 3. 変更したいファイルをドライブにアップロード
 4. アップロードしたファイルのパスをコピーし、貼り付ける
