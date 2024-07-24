@@ -3,7 +3,7 @@ title: Shift-JISのファイルをUTF-8にエンコードする
 tags:
   - 'ファイル変換'
   - 'python'
-  - 'Google Colab'
+  - 'GoogleColab'
 private: false
 updated_at: ''
 id: null
