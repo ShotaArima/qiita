@@ -6,7 +6,7 @@ tags:
   - 旭川
   - TechRamen2024
 private: false
-updated_at: '2024-08-03T22:56:37+09:00'
+updated_at: '2024-08-03T22:58:19+09:00'
 id: 22a0a209d7675fcdcb58
 organization_url_name: null
 slide: false
