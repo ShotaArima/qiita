@@ -1,14 +1,13 @@
 ---
-# id: TechRamen2024
 title: TechRamen2024っていう旭川の心温まるカンファレンス
 tags:
-  - 'TechRamen2024'
-  - '旭川'
-  - 'Conference'
-  - '登壇'
+  - Conference
+  - 登壇
+  - 旭川
+  - TechRamen2024
 private: false
-updated_at: ''
-id: null
+updated_at: '2024-08-03T22:56:37+09:00'
+id: 22a0a209d7675fcdcb58
 organization_url_name: null
 slide: false
 ignorePublish: false
