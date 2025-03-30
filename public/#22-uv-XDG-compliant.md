@@ -59,6 +59,25 @@ https://github.com/astral-sh/uv/pull/8420
 
 このIssueは、`uv`のインストール先を`.cargo/env`から`.local/bin`に変更されたということが書かれています。これは、`uv`がRustで使用されていた背景があり、インストール先も`.cargo/env`配下になっていました。しかしこのPRではXDGに準拠するためにインストール先を変更したと記述されています。では、このXDGとはなんでしょうか？
 
+# 解決策
+この問題を解決するには、以下のようにDockerfileを修正してください。
+
+```Dockerfile
+# 修正後のDockerfile
+FROM python:3.12-slim-bookworm
+
+RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates
+
+ADD https://astral.sh/uv/install.sh /uv-installer.sh
+
+RUN sh /uv-installer.sh && rm /uv-installer.sh
+
+# PATHに.local/binを追加
+ENV PATH="/root/.local/bin:$PATH"
+
+COPY --from=ghcr.io/astral-sh/uv:0.6.10 /uv /uvx /bin/
+```
+
 # XDGとは
 > Various specifications specify files and file formats. This specification defines where these files should be looked for by defining one or more base directories relative to which files should be located.
 
@@ -71,6 +90,7 @@ https://github.com/astral-sh/uv/pull/2236#issue-2171078128
 この話のきっかけとしては、ユーザがRustを使用していないために`.cargo`ではない別の空間に保存する必要があるということで始まりました。使用しているマシンによって異なるディレクトリを指定すると混乱を生じさせるため、変更が行われました。
 
 
-
+# まとめ
+以上より、`uv`における環境変数のインストール先の変更が行われました。`uv`がCargoを起源としているからこその今回の問題の発生原因だったのかなと思います。
 
 [^1]:[XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/latest/#introduction)
