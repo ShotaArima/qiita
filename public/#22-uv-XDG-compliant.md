@@ -60,6 +60,17 @@ https://github.com/astral-sh/uv/pull/8420
 このIssueは、`uv`のインストール先を`.cargo/env`から`.local/bin`に変更されたということが書かれています。これは、`uv`がRustで使用されていた背景があり、インストール先も`.cargo/env`配下になっていました。しかしこのPRではXDGに準拠するためにインストール先を変更したと記述されています。では、このXDGとはなんでしょうか？
 
 # XDGとは
+> Various specifications specify files and file formats. This specification defines where these files should be looked for by defining one or more base directories relative to which files should be located.
+
+*XDG Base Directory Specification ~Introduction~[^1]*
+
+XDGは、様々な仕様でファイルやファイル形式が指定されている中で、ファイルの配置場所の基準として定義されたものです。`dotfile`など、設定ファイルとかデータなどの保存場所がアプリケーション毎にバラバラだと、`$home`などディレクトリが汚染されてしまいます。今回の環境変数については、このXDGに準拠するために変更されたものです。
+
+https://github.com/astral-sh/uv/pull/2236#issue-2171078128
+
+この話のきっかけとしては、ユーザがRustを使用していないために`.cargo`ではない別の空間に保存する必要があるということで始まりました。使用しているマシンによって異なるディレクトリを指定すると混乱を生じさせるため、変更が行われました。
 
 
 
+
+[^1]:[XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/latest/#introduction)
