@@ -1,13 +1,14 @@
 ---
 title: '`uv`の環境変数のインストール先の変更とXDG準拠'
 tags:
-  - ''
+  - 'python'
+  - 'uv'
 private: false
 updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: false
+ignorePublish: true
 ---
 
 # この記事について
