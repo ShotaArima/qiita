@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -18,12 +19,58 @@ concurrency:
 jobs:
   publish_articles:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: increments/qiita-cli/actions/publish@v1
+
+      # Qiita APIを使って記事の最終更新日時を取得
+      - name: Get Qiita article update timestamp
+        id: qiita_article
+        run: |
+          ITEM_ID="your_article_id_here"
+          UPDATED_AT=$(curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/items/$ITEM_ID" | jq -r '.updated_at')
+          echo "Qiita article updated_at: $UPDATED_AT"
+          echo "::set-output name=updated_at::$UPDATED_AT"
+
+      # ローカルの記事の最終更新日時を取得
+      - name: Get local article update timestamp
+        id: local_article
+        run: |
+          LOCAL_ARTICLE_PATH="path/to/your/article.md"
+          LOCAL_UPDATED_AT=$(stat -c %Y "$LOCAL_ARTICLE_PATH")
+          echo "Local article updated_at: $LOCAL_UPDATED_AT"
+          echo "::set-output name=local_updated_at::$LOCAL_UPDATED_AT"
+
+      # Qiita記事とローカル記事の更新日時を比較
+      - name: Compare timestamps and handle conflict
+        id: compare
+        run: |
+          if [[ "${{ steps.qiita_article.outputs.updated_at }}" < "${{ steps.local_article.outputs.local_updated_at }}" ]]; then
+            echo "Local article is newer. Proceeding to deploy."
+            # ローカル記事をQiitaにデプロイ
+            echo "Deploying to Qiita..."
+            # qiita-cliの公開処理をここで行う
+          else
+            echo "Qiita article is newer. Creating a pull request to resolve conflict..."
+            # 新しいブランチを作成してローカルの変更を反映させる
+            git checkout -b update-qiita-article
+            # コンフリクトを解消した後の内容をコミット
+            git commit -am "Resolve conflict with Qiita article"
+            git push origin update-qiita-article
+
+            # GitHub APIを使ってPRを作成
+            curl -X POST \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -d '{"title":"Resolve conflict with Qiita article","head":"update-qiita-article","base":"main"}' \
+              "https://api.github.com/repos/${{ github.repository }}/pulls"
+          fi
+
+      # Qiitaへ公開する処理（PRがマージされた後に行われる）
+      - name: Publish article to Qiita
+        if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
+        uses: increments/qiita-cli/actions/publish@v1
         with:
           qiita-token: ${{ secrets.QIITA_TOKEN }}
           root: "."
