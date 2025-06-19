@@ -4,7 +4,7 @@ tags:
   - Docker
   - ポートフォリオ
   - React
-  - Gh-pages
+  - GitHubPages
 private: false
 updated_at: '2025-06-19T21:13:51+09:00'
 id: 5fc728012c753e7fe245
