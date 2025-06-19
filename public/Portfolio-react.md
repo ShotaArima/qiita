@@ -69,7 +69,7 @@ $ docker compose up -d
 $ docker compose exec resume-app bash # コンテナ侵入
 ---
 $ npx create-react-app my-resume cd my-resume # JavaScriptで構築
-$ npx create-react-app my-reume --template typescript # typescriptで構築
+$ npx create-react-app my-resume --template typescript # typescriptで構築
 ```
 
 - `my-resume-site`の中に以下のようなフィアルが作成されているか確認
@@ -122,14 +122,12 @@ WORKDIR /app
 # 必要なツールをインストール
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
-# Vite CLIを使えるように
 RUN npm install -g create-vite
 ```
 
 - 再度コンテナを起動する
 ```bash
 $ doker compose build # Dockerfileをもとにビルド
-~~~
 $ docker compose up -d # ビルドしたコンテナイメージを起動する
 $ docker compose exec resume-app bash # コンテナに侵入
 ---
@@ -141,7 +139,7 @@ $ npm start # reactアプリケーションの起動
     - `http://localhost:3000`
     - 以下のような画面が現れると思います
     ![スクリーンショット 2025-06-15 18 40 05](https://github.com/user-attachments/assets/a9b5d49e-45c9-467b-9ce0-11b10c8d3945)
-- 終了時は`Ctr+C`で終了できます。
+- 終了時は`Ctrl+C`で終了できます。
 
 - `compose.yaml`を修正し、Docker起動と同時にreactを起動するように設定する
 ```yaml
@@ -159,7 +157,7 @@ services:
 ```
 
 ## 4. デプロイを行う
-- 目標はreactの最初の画面をGiHub Pagesで閲覧できる状態
+- 目標はreactの最初の画面をGitHub Pagesで閲覧できる状態
 - package.jsonの修正
     - GitHub PagesでReactアプリをビルドする際に生成するHTML, CSS, JavaScriptのパスを調整する役割がある
 ```json
@@ -199,17 +197,17 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        working-directory: ./my-resume-app #自分で命名したディレクトリ名
+        working-directory: ./my-resume-site #自分で命名したディレクトリ名
 
       - name: Build site
         run: npm run build
-        working-directory: ./my-resume-app # 自分で命名したディレクトリ名
+        working-directory: ./my-resume-site # 自分で命名したディレクトリ名
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./my-resume-app/build #自分で命名したディレクトリ名
+          publish_dir: ./my-resume-site/build #自分で命名したディレクトリ名
 ```
 
 - GitHubのリポジトリの設定を行う
@@ -218,7 +216,7 @@ jobs:
 
 ## 5. 確認
 - 公開されているページを確認する
-    - `https://username.github,io/(リポジトリ名)`にアクセスし確認する
+    - `https://username.github.io/(リポジトリ名)`にアクセスし確認する
     - 変更が反映されるまで少々時間がかかりますので、ご注意ください
 
 ## 更新手順について
@@ -226,26 +224,26 @@ jobs:
 - Pull Requestを作成し、mergeしたタイミングでdeployを行う設定にしています。
 1. 修正前にお手持ちのリポジトリでブランチを作成する
 ```bash
-git  checkout -b "ユニークなブランチ名"
+$ git  checkout -b "ユニークなブランチ名"
 ```
 
 2. 変更を行う
-- `localhost:3000`で変更内容を視覚的に確認する
+- `http:localhost:3000`で変更内容を視覚的に確認する
 3. 変更をcommitする
 ```bash
-git add ~~
-git commit -m "commitメッセージ"
-git push -u origin "ブランチ名" #初回のみ
-git push #2回目以降
+$ git add ~~
+$ git commit -m "commitメッセージ"
+$ git push -u origin "ブランチ名" #初回のみ
+$ git push #2回目以降
 ```
 4. Pull Requestの作成
 - GitHubのリモートリポジトリを開き、「create Pull Request」を選択
 - 変更内容を確認
-5. mergeする
-- Pull Request内になる「merge」を選択
+5. Mergeする
+- Pull Request内になる「Merge」を選択
 - **デプロイ**開始
 6. 公開されているページを確認する
-- `https://username.github,io/(リポジトリ名)`にアクセスし確認する
+- `https://username.github.io/(リポジトリ名)`にアクセスし確認する
 
 ## おわりに
 - 以上の手順により、ローカル環境(自分のパソコン内)に直接`npm`をinstallせずにreact環境を構築し、GitHub Pagesにデプロイすることができました。今後は、自分でサイトのデザインや実装などを行って行く流れになりますので、自分自身のサイトデザインを作成してみてください！
